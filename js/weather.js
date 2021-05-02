@@ -49,6 +49,14 @@ function getWeather(latitude, longitude) {
       displayWeather();
     });
 }
+function weather.description(weather) {
+	"weather": [
+        {
+            "id": 800,
+            "description": "açık hava",
+        }
+    ]
+}
 
 // Display Weather info
 function displayWeather() {

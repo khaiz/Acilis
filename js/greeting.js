@@ -10,16 +10,18 @@ const gree1 = 'Uyku vakti!  ';
 const gree2 = 'Günaydın!  ';
 const gree3 = 'İyi günler,  ';
 const gree4 = 'İyi akşamlar,  ';
-const gree5 = 'İyi akşamlar,  ';
+const gree5 = 'İyi geceler,  ';
 const gree6 = 'İyi akşamlar,  ';
 
 // Define the hours of the greetings
-if (hour >= 23 && hour < 5) {
+if (hour >= 1 && hour < 6) {
   document.getElementById('greetings').innerText = gree1;
-} else if (hour >= 6 && hour < 12) {
+} else if (hour >= 6 && hour < 10) {
   document.getElementById('greetings').innerText = gree2;
-} else if (hour >= 12 && hour < 17) {
+} else if (hour >= 10 && hour < 17) {
   document.getElementById('greetings').innerText = gree3 + name;
-} else {
+} else if (hour >= 17 && hour < 22) {
   document.getElementById('greetings').innerText = gree4 + name;
+} else if (hour >= 22 && hour < 1) {
+  document.getElementById('greetings').innerText = gree5 + name;
 }
